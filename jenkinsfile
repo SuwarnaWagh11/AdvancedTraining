@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Scan') {
              steps {
-                 withSonarQubeEnv(installatioName: 'sonarqube3091'){
+                 withSonarQubeEnv(installationName: 'sonarqube3091'){
                     sh './mvnw clean sonar:sonar'
                    }
                  }
