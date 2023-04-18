@@ -4,7 +4,7 @@ pipeline {
         stage('Scan') {
              steps {
                  withSonarQubeEnv(installationName: 'sonarqube3091'){
-                    bat 'mvn clean test install package sonar:sonar sonar.login=“admin” sonar.password=“123456789”'
+                    bat 'mvn clean test install package sonar:sonar'
                  }
              }
         }
