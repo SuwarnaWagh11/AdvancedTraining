@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Scan') {
+             steps {
+                 withSonarQubeEnv(installatioName: 'sonarqube3091'){
+                    sh './mvnw clean sonar:sonar'
+                   }
+                 }
+             }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
