@@ -4,7 +4,7 @@ pipeline {
         stage('Scan') {
              steps {
                  withSonarQubeEnv(installationName: 'sonarqube3091'){
-                    sh './mvn clean test install package sonar:sonar'
+                    bat './mvn clean test install package sonar:sonar'
                  }
              }
         }
