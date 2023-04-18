@@ -1,27 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
         stage('Scan') {
              steps {
                  withSonarQubeEnv(installationName: 'sonarqube3091'){
                     sh './mvn clean sonar:sonar'
-                   }
                  }
              }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
         }
     }
 }
