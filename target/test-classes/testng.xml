@@ -3,6 +3,7 @@
 <suite name="All Test Suite">
     <listeners>
         <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+        <listener class-name="com.global.automation.ui.listener.Listeners"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="C:/AdvancedTraining">
         <classes>
