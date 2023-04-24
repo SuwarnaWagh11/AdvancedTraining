@@ -7,14 +7,14 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="C:/AdvancedTraining">
         <classes>
-            <class name="com.global.automation.apitest.Test1">
-                <methods>
-                    <include name="demoTest"/>
-                </methods>
-            </class>
-            <class name="com.global.automation.apitest.Test2">
+            <class name="com.global.automation.apitest.ApiDemoTest">
                 <methods>
                     <include name="demoTest2"/>
+                </methods>
+            </class>
+            <class name="com.global.automation.apitest.DemoAutoTest">
+                <methods>
+                    <include name="demoTest"/>
                 </methods>
             </class>
         </classes>

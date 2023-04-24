@@ -17,7 +17,6 @@ public class DemoAutoTest {
         String rp_message = "test message for Report Portal";
         ReportPortalMessage message = new ReportPortalMessage(new File(screenshot_file_path), rp_message);
         LOGGER.info(message);
-        System.out.println("Say Hi");
         Assert.assertTrue(true);
     }
 }
