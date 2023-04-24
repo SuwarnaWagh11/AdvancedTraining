@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
                 glue = "com.global.automation.uitest.stepDefinition",
                 dryRun = false,
                 monochrome = true,
-                plugin = {"pretty","html:target/cucumber-reports/MyHtmlReport.html"},
+                plugin = {"pretty","html:target/cucumber-reports/MyHtmlReport.html", "json:target/cucumber-reports/cucumber-json.json"},
                 publish = true)
 
 public class TestRunner {
