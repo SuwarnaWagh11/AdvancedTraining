@@ -13,6 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class DashboardTest {
 
     private static final Logger LOGGER = LogManager.getLogger(DashboardTest.class);
@@ -25,6 +27,7 @@ public class DashboardTest {
         driver = new ChromeDriver();
         dashboard = new Dashboard(driver);
         loginPage = new LoginPage(driver);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
 
     @When("User opens the URL {string}")
@@ -39,6 +42,7 @@ public class DashboardTest {
         loginPage.enterLoginPwd(pwd);
         loginPage.clickOnLogin();
         //Thread.sleep(1000);
+
         dashboard.clickOnDemoDashboard();
         //Thread.sleep(1000);
     }

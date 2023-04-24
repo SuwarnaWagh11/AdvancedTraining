@@ -13,7 +13,7 @@ public class Dashboard {
         PageFactory.initElements(rdriver,this);
     }
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div/a")
+    @FindBy(xpath = "//*[@id=\'app\']/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div/a")
     WebElement demoDashboardNameLink;
 
     public void clickOnDemoDashboard(){
