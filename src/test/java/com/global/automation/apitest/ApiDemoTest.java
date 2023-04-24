@@ -3,7 +3,7 @@ package com.global.automation.apitest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Test2 {
+public class ApiDemoTest {
     @Test
     public void demoTest2(){
         Assert.assertTrue(true);

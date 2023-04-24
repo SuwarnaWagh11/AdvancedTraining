@@ -9,9 +9,8 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
-
-public class Test1 {
-    private static final Logger LOGGER = LogManager.getLogger(Test.class);
+public class DemoAutoTest {
+    private static final Logger LOGGER = LogManager.getLogger(DemoAutoTest.class);
     public static final String screenshot_file_path = "screenshot/demoScreenshoot.jpg";
     @Test
     public void demoTest() throws IOException {
