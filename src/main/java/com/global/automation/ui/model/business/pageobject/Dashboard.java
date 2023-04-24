@@ -1,4 +1,4 @@
-package com.global.automation.ui.model.business.PageObject;
+package com.global.automation.ui.model.business.pageobject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

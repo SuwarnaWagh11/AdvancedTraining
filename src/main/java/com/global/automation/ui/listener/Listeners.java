@@ -1,5 +1,7 @@
 package com.global.automation.ui.listener;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -8,36 +10,39 @@ import org.testng.ITestResult;
  *
  */
 public class Listeners implements ITestListener {
+
+    private static final Logger LOGGER = LogManager.getLogger(Listeners.class);
+    @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("Started Test "+ result.getTestName());
+        LOGGER.info("Started Test "+ result.getTestName());
     }
-
+    @Override
     public void onTestSuccess(ITestResult result) {
-        System.out.println("Succeeded test "+result.getTestName());
+        LOGGER.info("Succeeded Test "+ result.getTestName());
     }
-
+    @Override
     public void onTestFailure(ITestResult result) {
-        System.out.println("Failed test "+result.getTestName());
+        LOGGER.info("Failed Test "+ result.getTestName());
     }
-
+    @Override
     public void onTestSkipped(ITestResult result) {
-        System.out.println("Skipped test "+result.getTestName());
+        LOGGER.info("Skipped test "+ result.getTestName());
     }
-
+    @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        System.out.println("Test failed within success % "+result.getTestName());
+        LOGGER.info("Test failed within success %  "+ result.getTestName());
     }
-
+    @Override
     public void onTestFailedWithTimeout(ITestResult result) {
         this.onTestFailure(result);
     }
-
+    @Override
     public void onStart(ITestContext context) {
-        System.out.println("Started "+ context.getName());
+        LOGGER.info("Started "+ context.getName());
     }
-
+    @Override
     public void onFinish(ITestContext context) {
-        System.out.println("Finished "+context.getName());
+        LOGGER.info("Finished "+ context.getName());
     }
 
 }
