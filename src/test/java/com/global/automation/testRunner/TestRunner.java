@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/feature",
                 glue = "com.global.automation.uitest.stepDefinition",
-                dryRun = false,
-                tags = "@RegTest",// or @SanityTest or @SmokeTest",
+                //dryRun = false,
+                tags = "@RegTest or @SanityTest or @SmokeTest",
                 monochrome = true,
                 plugin = {"pretty","html:target/cucumber-reports/MyHtmlReport.html",
                         "json:target/cucumber-reports/cucumber-json.json",
