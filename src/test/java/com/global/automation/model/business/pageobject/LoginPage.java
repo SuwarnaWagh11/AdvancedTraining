@@ -1,19 +1,20 @@
-package com.global.automation.ui.model.business.pageobject;
+package com.global.automation.model.business.pageobject;
 
+import com.global.automation.base.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import java.io.IOException;
+
+public class LoginPage extends BaseTest {
 
     WebDriver ldriver;
-
-    public LoginPage(WebDriver rdriver){
+    public LoginPage(WebDriver rdriver) {
         ldriver = rdriver;
         PageFactory.initElements(rdriver,this);
     }
-
     @FindBy(name = "login")
     WebElement loginName;
 
