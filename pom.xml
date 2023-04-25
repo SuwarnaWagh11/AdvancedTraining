@@ -32,6 +32,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <xmlFile>src/test/resources/testng.xml</xmlFile>
+                        <xmlFile>src/test/resources/testng_ui.xml</xmlFile>
                     </suiteXmlFiles>
                     <workingDirectory>./</workingDirectory>
                     <properties>
