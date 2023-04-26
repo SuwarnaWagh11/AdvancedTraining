@@ -33,7 +33,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.get(properties.getProperty("url"));
-        driver.manage().window().fullscreen();
+        driver.manage().window().maximize();
         LOGGER.info("Test set up done successfully**********");
     }
     @AfterTest

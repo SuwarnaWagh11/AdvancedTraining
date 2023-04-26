@@ -2,7 +2,9 @@ package com.global.automation.uitest.stepDefinition;
 
 import com.global.automation.base.BaseTest;
 import com.global.automation.model.business.pageobject.Dashboard;
+import com.global.automation.model.business.pageobject.DemoDashboard;
 import com.global.automation.model.business.pageobject.LoginPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,14 +24,17 @@ public class DashboardTest {
     public WebDriver driver;
     public LoginPage loginPage;
     public Dashboard dashboard;
+    private DemoDashboard demoDashboard;
 
     @Given("user launch the chrome browser")
-    public void user_launch_the_chrome_browser() throws IOException {
+    public void user_launch_the_chrome_browser() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         dashboard = new Dashboard(driver);
         loginPage = new LoginPage(driver);
+        demoDashboard = new DemoDashboard(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().window().maximize();
     }
 
     @When("User opens the URL {string}")
@@ -42,15 +47,30 @@ public class DashboardTest {
         loginPage.enterLoginName(username);
         loginPage.enterLoginPwd(pwd);
         loginPage.clickOnLogin();
-        dashboard.clickOnDemoDashboard();
     }
     @Then("Page title should be {string}")
     public void page_title_should_be(String expectedTitle) {
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
     }
+
+    @Then("User clicks on DemoDashboard and get the total widget present in the dashboard page")
+    public void user_clicks_on_demo_dashboard_and_get_the_total_widget_present_in_the_dashboard_page() {
+        dashboard.clickOnDemoDashboard();
+        Assert.assertEquals(demoDashboard.getTotalWidgetPresetOnDemoDashboard(), 12);
+    }
+
+    @Then("Verify that DemoDashboard page contains {string}")
+    public void verify_that_demo_dashboard_page_contains(String keyWord) {
+        boolean isPresent = demoDashboard.verifyNamesOfWidgetPresetOnDemoDashboard(keyWord);
+        Assert.assertTrue(isPresent);
+    }
     @Then("User closes the browser")
     public void User_closes_the_browser() {
         driver.quit();
+    }
+
+    @And("Verify that DemoDashboard page contains widgets")
+    public void verifyThatDemoDashboardPageContainsWidgets() {
     }
 }
