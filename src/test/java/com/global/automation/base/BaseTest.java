@@ -31,8 +31,9 @@ public class BaseTest {
         properties = readPropFile();
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.get(properties.getProperty("url"));
+        driver.manage().window().fullscreen();
         LOGGER.info("Test set up done successfully**********");
     }
     @AfterTest
