@@ -31,16 +31,12 @@ public class DashboardPageTest extends BaseTest {
         loginPage.enterLoginPwd(pwd);
         loginPage.clickOnLogin();
         dashboard.clickOnDemoDashboard();
-
     }
-
     @Test(dependsOnMethods = "loginToReportPortal")
     public void totalWidgetPresent(){
-
         demoDashboard.getTotalWidgetPresetOnDemoDashboard();
         Assert.assertEquals(demoDashboard.getTotalWidgetPresetOnDemoDashboard(), 12);
     }
-
     @DataProvider(name = "test-data")
     public Object[][] dataProvFunc(){
         return new Object[][]{
