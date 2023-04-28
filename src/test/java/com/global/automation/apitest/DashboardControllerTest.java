@@ -2,7 +2,7 @@ package com.global.automation.apitest;
 
 import com.global.automation.api.pojo.CreateDashboard;
 import io.restassured.http.Header;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
@@ -57,7 +57,7 @@ public class DashboardControllerTest {
         given()
                 .header(new Header("Authorization","Bearer "+"8bb82a7d-a573-419e-9cce-c2419f308802")).
                 when()
-                .delete("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/50")
+                .delete("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/49")
                 .then()
                 .statusCode(200);
     }
