@@ -5,18 +5,9 @@
         <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
         <listener class-name="com.global.automation.ui.listener.Listeners"/>
     </listeners>
-    <test verbose="2" name="C:/AdvancedTraining" parallel = "methods">
-        <classes>
-            <class name="com.global.automation.apitest.ApiDemoTest">
-                <methods>
-                    <include name="demoTest2"/>
-                </methods>
-            </class>
-            <class name="com.global.automation.apitest.DemoAutoTest">
-                <methods>
-                    <include name="demoTest"/>
-                </methods>
-            </class>
-        </classes>
+    <test name="Dashboard Test">
+        <packages>
+            <package name="com.global.automation.apitest"/>
+        </packages>
     </test>
 </suite>
