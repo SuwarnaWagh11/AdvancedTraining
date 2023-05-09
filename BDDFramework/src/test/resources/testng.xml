@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
     </listeners>
-    <test name="Dashboard Test">
+    <test name="Dashboard Test in testng">
         <packages>
             <package name="apitests"/>
         </packages>
