@@ -3,11 +3,11 @@
 <suite name="All Test Suite">
     <listeners>
         <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
-        <listener class-name="com.global.automation.ui.listener.Listeners"/>
+        <listener class-name="com.global.automation.utils.Listeners"/>
     </listeners>
     <test name="Dashboard Test">
         <packages>
-            <package name="com.global.automation.apitest"/>
+            <package name="com.global.automation.alltests.apitest"/>
         </packages>
     </test>
 </suite>
