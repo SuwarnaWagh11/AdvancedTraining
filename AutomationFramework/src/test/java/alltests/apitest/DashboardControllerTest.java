@@ -1,6 +1,6 @@
-package com.global.automation.alltests.apitest;
+package alltests.apitest;
 
-import com.global.automation.api.pojo.*;
+import api.pojo.*;
 import io.restassured.http.Header;
 import org.testng.annotations.Test;
 

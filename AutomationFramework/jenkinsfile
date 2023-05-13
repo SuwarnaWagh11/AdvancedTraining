@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+    stages {
+        stage('Scan') {
+             steps {
+                 withSonarQubeEnv(installationName: 'sonarqube3091'){
+                    bat 'mvn clean test install package sonar:sonar'
+                 }
+             }
+        }
+    }
+}

@@ -13,10 +13,6 @@ Feature: VerifyDashboardWidgetVisible
     Examples:
       | widget                              |
       | LAUNCH STATISTICS BAR               |
-#      | OVERALL STATISTICS PANEL            |
-#      | LAUNCH TABLE                        |
-#      | TEST CASES GROWTH TREND CHART       |
-#      | INVESTIGATED PERCENTAGE OF LAUNCHES |
 
   @Test12
   Scenario Outline: Verify that Widget contains all given items

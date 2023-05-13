@@ -53,6 +53,7 @@
     </build>
     <modules>
         <module>BDDFramework</module>
+        <module>AutomationFramework</module>
     </modules>
     <repositories>
         <repository>
@@ -219,7 +220,6 @@
             <artifactId>extentreports</artifactId>
             <version>3.0.0</version>
         </dependency>
-
     </dependencies>
     <profiles>
         <profile>

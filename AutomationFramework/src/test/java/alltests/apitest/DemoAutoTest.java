@@ -1,4 +1,4 @@
-package com.global.automation.alltests.apitest;
+package alltests.apitest;
 
 import com.epam.reportportal.message.ReportPortalMessage;
 import org.apache.logging.log4j.LogManager;
