@@ -12,7 +12,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task2 {
+public class Module6Task2 {
 
     @InjectMocks
     OrderService orderService;
@@ -27,9 +27,9 @@ public class Task2 {
     public void init(){
      MockitoAnnotations.openMocks(this);
      productList = new ArrayList<>();
-     product1 = new Product(001, "P1", 2, 4);
-     product2 = new Product(002, "P2", 2, 4);
-     product3 = new Product(003, "P3", 2, 4);
+     product1 = new Product(1, "P1", 2, 4);
+     product2 = new Product(2, "P2", 2, 4);
+     product3 = new Product(3, "P3", 2, 4);
      productList.add(product1);productList.add(product2);productList.add(product3);
      shoppingCart = new ShoppingCart(productList);
      user = new UserAccount("John","Smith","1990/10/10", shoppingCart);
