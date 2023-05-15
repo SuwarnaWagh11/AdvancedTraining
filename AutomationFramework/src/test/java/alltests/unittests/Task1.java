@@ -2,6 +2,7 @@ package alltests.unittests;
 
 import com.epam.tamentoring.bo.Product;
 import com.epam.tamentoring.bo.ShoppingCart;
+import com.epam.tamentoring.exceptions.ProductNotFoundException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,6 +25,23 @@ public class Task1 {
        productList.add(product1);productList.add(product2);productList.add(product3);productList.add(product4);
        shoppingCart = new ShoppingCart(productList);
    }
+    @Test
+    public void verifyExceptionAfterRemovingProductFromCart() {
+        shoppingCart.removeProductFromCart(product1);
+        try{
+            shoppingCart.removeProductFromCart(product1);
+        }catch (ProductNotFoundException ex){
+            Assert.assertEquals(ex.getMessage(), "Product is not found in the cart: Product(id=1, name=P1, price=2.0, quantity=4.0)");
+        }
+    }
+    @Test
+    public void getProductByIdForNonExistingProduct() {
+        try{
+            shoppingCart.getProductById(product1.getId());
+        }catch (ProductNotFoundException ex){
+            Assert.assertEquals(ex.getMessage(), "Product with 1 ID is not found in the shopping cart!");
+        }
+    }
    @Test
    public void addSingleProducts() {
        product5 = new Product(005, "P5", 2, 4);
