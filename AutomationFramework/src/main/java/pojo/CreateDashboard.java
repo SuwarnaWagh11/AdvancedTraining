@@ -1,4 +1,4 @@
-package api.pojo;
+package pojo;
 
 public class CreateDashboard {
     public CreateDashboard(String name, String description, boolean share) {
