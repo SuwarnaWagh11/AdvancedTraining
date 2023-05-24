@@ -1,0 +1,67 @@
+2023-05-24 13:54:39 DEBUG NetworkTrafficMonitorTest:31 - sent: {}315
+ 2023-05-24 13:54:39 DEBUG NetworkTrafficMonitorTest:32 - recv: {}2432
+ 2023-05-24 13:54:39 DEBUG NetworkTrafficMonitorTest:33 - reqcnt: {}2
+ 2023-05-24 13:54:39 DEBUG NetworkTrafficMonitorTest:34 - rescnt: {}2
+ 2023-05-24 14:28:11 DEBUG NetworkTrafficMonitorTest:30 - sent: {}315
+ 2023-05-24 14:28:11 DEBUG NetworkTrafficMonitorTest:31 - recv: {}2432
+ 2023-05-24 14:28:11 DEBUG NetworkTrafficMonitorTest:32 - reqcnt: {}2
+ 2023-05-24 14:28:11 DEBUG NetworkTrafficMonitorTest:33 - rescnt: {}2
+ 2023-05-24 14:29:54 DEBUG NetworkTrafficMonitorTest:31 - sent: {}315
+ 2023-05-24 14:29:54 DEBUG NetworkTrafficMonitorTest:32 - recv: {}2432
+ 2023-05-24 14:29:54 DEBUG NetworkTrafficMonitorTest:33 - reqcnt: {}2
+ 2023-05-24 14:29:54 DEBUG NetworkTrafficMonitorTest:34 - rescnt: {}2
+ 2023-05-24 14:35:41 INFO  DashboardControllerTest:26 - getAllDashboardListTest
+ 2023-05-24 14:37:37 INFO  DashboardControllerTest:38 - createNewDashboardByName
+ 2023-05-24 14:37:40 INFO  DashboardControllerTest:45 - deleteDashboardById
+ 2023-05-24 14:37:40 INFO  DashboardControllerTest:26 - getAllDashboardListTest
+ 2023-05-24 14:37:40 INFO  DashboardControllerTest:20 - getAllSharedDashboardTest
+ 2023-05-24 14:37:40 INFO  DashboardControllerTest:32 - getDashboardByIdTest
+ 2023-05-24 20:08:22 INFO  DashboardControllerTest:38 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:09:15 INFO  DashboardControllerTest:38 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:18:02 INFO  DashboardControllerTest:42 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:19:11 INFO  DashboardControllerTest:43 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:21:33 INFO  DashboardControllerTest:43 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:24:41 INFO  DashboardControllerTest:44 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:28:27 INFO  DashboardControllerTest:45 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:28:44 INFO  DashboardControllerTest:45 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:29:36 INFO  DashboardControllerTest:45 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:38:24 INFO  DashboardControllerTest:46 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:53:23 INFO  DashboardControllerTest:49 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 20:54:46 INFO  DashboardControllerTest:49 - getDashboardByIdThatDoesNotExist_GET
+ 2023-05-24 21:00:38 INFO  DashboardControllerTest:58 - createNewDashboardByName
+ 2023-05-24 21:03:21 INFO  DashboardControllerTest:58 - createNewDashboardByName
+ 2023-05-24 21:03:58 INFO  DashboardControllerTest:58 - createNewDashboardByName
+ 2023-05-24 21:04:36 INFO  DashboardControllerTest:67 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:05:28 INFO  DashboardControllerTest:67 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:06:30 INFO  DashboardControllerTest:67 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:10:38 INFO  DashboardControllerTest:67 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:11:59 INFO  DashboardControllerTest:67 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:14:55 INFO  DashboardControllerTest:76 - deleteDashboardById
+ 2023-05-24 21:22:05 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:22:51 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:23:34 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:25:08 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:27:19 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:28:00 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:29:36 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:30:49 INFO  DashboardControllerTest:33 - getAllDashboardListTest
+ 2023-05-24 21:31:55 INFO  DashboardControllerTest:53 - createNewDashboardByName
+ 2023-05-24 21:32:21 INFO  DashboardControllerTest:53 - createNewDashboardByName
+ 2023-05-24 21:32:38 INFO  DashboardControllerTest:53 - createNewDashboardByName
+ 2023-05-24 21:33:50 INFO  DashboardControllerTest:78 - deleteDashboardById
+ 2023-05-24 21:34:00 INFO  DashboardControllerTest:85 - deleteDashboardByIdTHatDoesNotExist_DELETE
+ 2023-05-24 21:35:17 INFO  DashboardControllerTest:85 - deleteDashboardByIdTHatDoesNotExist_DELETE
+ 2023-05-24 21:36:21 INFO  DashboardControllerTest:85 - deleteDashboardByIdTHatDoesNotExist_DELETE
+ 2023-05-24 21:37:36 INFO  DashboardControllerTest:85 - deleteDashboardByIdTHatDoesNotExist_DELETE
+ 2023-05-24 21:42:06 INFO  DashboardControllerTest:70 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:42:47 INFO  DashboardControllerTest:70 - createNewDashboardWIthoutDescription_POST
+ 2023-05-24 21:57:22 INFO  DashboardControllerTest:54 - createNewDashboardByName
+ 2023-05-24 22:02:25 INFO  DashboardControllerTest:94 - updateDashboardNameRQ
+ 2023-05-24 22:04:50 INFO  DashboardControllerTest:54 - createNewDashboardByName
+ 2023-05-24 22:11:23 INFO  DashboardControllerTest:94 - updateDashboardNameRQ
+ 2023-05-24 22:12:14 INFO  DashboardControllerTest:94 - updateDashboardNameRQ
+ 2023-05-24 22:13:58 INFO  DashboardControllerTest:110 - updateNonExistedDashboard_PUT
+ 2023-05-24 22:15:19 INFO  DashboardControllerTest:120 - updateNonExistedDashboard_PUT
+ 2023-05-24 22:16:01 INFO  DashboardControllerTest:120 - updateNonExistedDashboard_PUT
+ 2023-05-24 22:17:09 INFO  DashboardControllerTest:120 - updateNonExistedDashboard_PUT
+ 
