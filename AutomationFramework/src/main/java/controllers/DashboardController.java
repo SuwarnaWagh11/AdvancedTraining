@@ -1,6 +1,11 @@
 package controllers;
 
 import api.request.dashboard.*;
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.JsonNode;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
+import configuration.FrameworkConfig;
 import model.dto.PatchDashboardDto;
 import model.dto.PostDashboardDto;
 import model.business.Dashboard;
@@ -10,6 +15,12 @@ import io.restassured.response.ValidatableResponse;
 
 public class DashboardController {
 
+    public HttpResponse<JsonNode> uniRestApiTestGet() throws UnirestException {
+        return Unirest.get(FrameworkConfig.baseUrl+"/dashboard/67")
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer 8bb82a7d-a573-419e-9cce-c2419f308802")
+                .asJson();
+    }
     public ValidatableResponse getAllSharedDashboardLists(){
         return new GetSharedDashboards().execute();
     }

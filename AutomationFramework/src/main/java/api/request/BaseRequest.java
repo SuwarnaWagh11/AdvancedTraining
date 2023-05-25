@@ -1,7 +1,6 @@
 package api.request;
 
 import configuration.FrameworkConfig;
-import io.restassured.http.Header;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
@@ -39,3 +38,8 @@ public class BaseRequest {
                 .then().log().all();
     }
 }
+/*HttpResponse<JsonNode> jsonResponse
+                = Unirest.get("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/67")
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer 8bb82a7d-a573-419e-9cce-c2419f308802")
+                .asJson();*/

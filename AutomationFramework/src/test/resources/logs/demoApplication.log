@@ -183,4 +183,5 @@
  2023-05-25 13:28:32 INFO  DashboardControllerTest:134 - l_deleteDashboardByIdThatDoesNotExist_DELETE
  2023-05-25 13:28:32 INFO  DashboardControllerTest:143 - m_updateNonExistedDashboard_PUT
  2023-05-25 13:28:32 INFO  DashboardControllerTest:153 - m_updateNullDashboard_PUT
+ 2023-05-25 14:30:15 INFO  DashboardControllerTest:31 - a_getAllSharedDashboardTest_GET
  
