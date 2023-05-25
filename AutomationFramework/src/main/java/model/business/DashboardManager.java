@@ -4,11 +4,11 @@ import configuration.FrameworkConfig;
 
 public class DashboardManager {
 
-    public static Dashboard createQADashboard(){
+    public static Dashboard createQADashboard(String name, String desc, boolean shared){
         return new DashboardBuilder()
-                .setName("Dashboard11")
-                .setDescription("Dashboard11 description ")
-                .setShared(true)
+                .setName(name)
+                .setDescription(desc)
+                .setShared(shared)
                 .build();
     }
 
@@ -24,6 +24,11 @@ public class DashboardManager {
                 .setName(name)
                 .setDescription(desc)
                 .setShared(shared)
+                .build();
+    }
+    public static Dashboard updateDashboardNameOnly(String name){
+        return new DashboardBuilder()
+                .setName(name)
                 .build();
     }
 }

@@ -1,6 +1,7 @@
 package controllers;
 
 import api.request.dashboard.*;
+import model.dto.PatchDashboardDto;
 import model.dto.PostDashboardDto;
 import model.business.Dashboard;
 import model.dto.PutDashboardDto;
@@ -33,7 +34,8 @@ public class DashboardController {
         return new PutDashboard(dashboardId, dto).execute();
     }
 
-    public ValidatableResponse patchDashboardById(int dashboardId){
-        return new PatchDashboard(dashboardId).execute();
+    public ValidatableResponse patchDashboardById(int dashboardId, Dashboard dashboardDto){
+        PatchDashboardDto dto = DashboardMapper.map(dashboardDto, PatchDashboardDto.class);
+        return new PatchDashboard(dashboardId, dto).execute();
     }
 }
