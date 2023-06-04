@@ -1,4 +1,4 @@
-package api.request.dashboard;
+package api.request.dashboard.putMethod;
 
 import api.request.BaseRequest;
 import model.dto.PutDashboardDto;

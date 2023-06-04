@@ -93,15 +93,6 @@ public class DashboardControllerTest {
         Dashboard dashboard = DashboardManager.updateDashboard("Updated QAT Dashboard A02 to A03", "Updated Dashboard A02 description updated to A03", true);
         Api.dashboardController.updateDashboardById(dashboardId, dashboard)
                 .statusCode(ResponseCodeConstants.OK);
-        /*given().header(new Header("Authorization","Bearer "+"8bb82a7d-a573-419e-9cce-c2419f308802"))
-                .contentType("application/json")
-                .when()
-                .body(dashboard)
-                .put("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/51")
-                .then()
-                .statusCode(ResponseCodeConstants.OK)
-                .extract().response().asPrettyString();*/
-
     }
     @Test
     public void i_updateDashboardNameRQ_PATCH() {
@@ -191,3 +182,11 @@ public class DashboardControllerTest {
     }
 
 }
+/*        /*given().header(new Header("Authorization","Bearer "+"8bb82a7d-a573-419e-9cce-c2419f308802"))
+                .contentType("application/json")
+                .when()
+                .body(dashboard)
+                .put("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/51")
+                .then()
+                .statusCode(ResponseCodeConstants.OK)
+                .extract().response().asPrettyString();*/

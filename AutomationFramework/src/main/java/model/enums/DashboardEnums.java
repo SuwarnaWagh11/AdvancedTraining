@@ -1,9 +1,6 @@
 package model.enums;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public enum DashboardEnums {
-
     ERRORCODE("errorCode"),
     ERROR("error"),
     STATUS("status"),

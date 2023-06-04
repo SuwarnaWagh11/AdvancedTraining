@@ -20,6 +20,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import utils.Utilities;
 
 import java.io.File;
 import java.io.FileReader;
@@ -63,6 +64,7 @@ public class BaseTest {
             String logText = "Test Case: "+result.getMethod().getMethodName()+"  Failed";
             Markup markup = MarkupHelper.createLabel(logText, ExtentColor.RED);
             logger1.log(Status.FAIL, markup);
+            Utilities.takeScreenshotUtil(driver);
         } else if (result.getStatus()==ITestResult.SKIP) {
             String logText = "Test Case: "+result.getMethod().getMethodName()+"  Skipped";
             Markup markup = MarkupHelper.createLabel(logText, ExtentColor.GREY);

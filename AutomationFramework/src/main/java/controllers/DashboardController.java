@@ -1,6 +1,13 @@
 package controllers;
 
-import api.request.dashboard.*;
+import api.request.BaseRequest;
+import api.request.dashboard.deleteMethod.DeleteDashboard;
+import api.request.dashboard.getMethod.GetDashboard;
+import api.request.dashboard.getMethod.GetDashboards;
+import api.request.dashboard.getMethod.GetSharedDashboards;
+import api.request.dashboard.patchMethod.PatchDashboard;
+import api.request.dashboard.postMethod.PostDashboard;
+import api.request.dashboard.putMethod.PutDashboard;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
@@ -13,13 +20,10 @@ import model.dto.PutDashboardDto;
 import model.mappers.DashboardMapper;
 import io.restassured.response.ValidatableResponse;
 
-public class DashboardController {
+public class DashboardController extends BaseRequest {
 
     public HttpResponse<JsonNode> uniRestApiTestGet() throws UnirestException {
-        return Unirest.get(FrameworkConfig.baseUrl+"/dashboard/67")
-                .header("Content-Type", "application/json")
-                .header("Authorization", "Bearer 8bb82a7d-a573-419e-9cce-c2419f308802")
-                .asJson();
+        return Unirest.get(FrameworkConfig.baseUrl+"/dashboard/67").headers(headers).asJson();
     }
     public ValidatableResponse getAllSharedDashboardLists(){
         return new GetSharedDashboards().execute();
