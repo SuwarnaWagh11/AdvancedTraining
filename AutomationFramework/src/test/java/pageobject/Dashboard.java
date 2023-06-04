@@ -1,4 +1,4 @@
-package model.business.pageobject;
+package pageobject;
 
 //import com.global.automation.base.BaseTest;
 import org.openqa.selenium.WebDriver;

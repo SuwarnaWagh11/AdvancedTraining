@@ -2,6 +2,7 @@ package utils;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -13,7 +14,24 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.function.Function;
 
-public class Utilities {
+import static base.BaseTest.driver;
+
+public class UtilitiesClass {
+
+    public static void clickOnEleByJS(By by){
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", driver.findElement(by));
+    }
+    public static void clickOnEleByCoordinates(int xCoordinate, int yCoordinate, By by){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(by), 0, 0);
+        actions.moveByOffset(xCoordinate, yCoordinate).click().build().perform();
+    }
+    public static void scrollToElement(WebDriver driver, WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        //get the height of the webpage and scroll to the end
+        js.executeScript("arguments[0].scrollIntoView();", element);
+    }
 
     public static String takeScreenshotUtil(WebDriver driver){
         String path;

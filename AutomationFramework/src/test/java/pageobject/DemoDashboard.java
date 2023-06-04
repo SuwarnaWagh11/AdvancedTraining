@@ -1,11 +1,11 @@
-package model.business.pageobject;
+package pageobject;
 
-import model.core.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.UtilitiesClass;
 
 import java.util.List;
 
@@ -39,8 +39,7 @@ public class DemoDashboard {//extends BaseTest {
     }
 
     public boolean verifyNamesOfWidgetPresetOnDemoDashboard(String name){
-        Utilities utilities = new Utilities();
-        utilities.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
+        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
         return ldriver.findElement(By.xpath("//*[text()='"+ name +"']")).isDisplayed();
     }
 
@@ -51,20 +50,17 @@ public class DemoDashboard {//extends BaseTest {
     }
 
     public boolean verifyStatisticsExecutionPassedItemsIsPresent(String name){//LAUNCH STATISTICS AREA
-        Utilities utilities = new Utilities();
-        utilities.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
+        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
         return statisticsPassed.isDisplayed();
     }
 
     public boolean verifyStatisticsExecutionFailedItemsIsPresent(String name){//LAUNCH STATISTICS AREA
-        Utilities utilities = new Utilities();
-        utilities.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
+        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
         return statisticsFailed.isDisplayed();
     }
 
     public boolean verifyStatisticsExecutionSkippedItemsIsPresent(String name){//LAUNCH STATISTICS AREA
-        Utilities utilities = new Utilities();
-        utilities.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
+        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
         return statisticsSkipped.isDisplayed();
     }
 

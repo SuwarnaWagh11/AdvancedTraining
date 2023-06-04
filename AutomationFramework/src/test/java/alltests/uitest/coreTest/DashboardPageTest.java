@@ -1,9 +1,6 @@
 package alltests.uitest.coreTest;
 
 import base.BaseTest;
-import model.business.pageobject.Dashboard;
-import model.business.pageobject.DemoDashboard;
-import model.business.pageobject.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -11,6 +8,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pageobject.Dashboard;
+import pageobject.DemoDashboard;
+import pageobject.LoginPage;
 
 public class DashboardPageTest extends BaseTest {
 
