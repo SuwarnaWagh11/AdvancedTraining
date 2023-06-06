@@ -4706,4 +4706,506 @@
  2023-06-06 19:06:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
  2023-06-06 19:06:36 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/logs-view/testrunner-logs-view.ftl"
  2023-06-06 19:06:36 INFO  Listeners:71 - Finished All UI Test
+ 2023-06-06 19:22:32 INFO  Listeners:67 - Started Dashboard API Controller Tests
+ 2023-06-06 19:22:33 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:33 INFO  DashboardControllerTest:31 - a_getAllSharedDashboardTest_GET
+ 2023-06-06 19:22:34 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:34 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:34 INFO  DashboardControllerTest:38 - b_getAllDashboardListTest_GET
+ 2023-06-06 19:22:34 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:34 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:34 INFO  DashboardControllerTest:45 - c_getDashboardByIdTest_GET
+ 2023-06-06 19:22:34 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:34 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:34 INFO  DashboardControllerTest:52 - getDashboardByIdThatDoesNotExist_GET
+ 2023-06-06 19:22:36 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:36 INFO  DashboardControllerTest:72 - e_createNewDashboardWithoutName_POST
+ 2023-06-06 19:22:36 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:36 INFO  DashboardControllerTest:61 - f_createNewDashboardByName_POST
+ 2023-06-06 19:22:36 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:36 INFO  DashboardControllerTest:82 - g_createDuplicateDashboard_POST
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:92 - h_updateDashboardNameRQ_UPDATE
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:99 - i_updateDashboardNameRQ_PATCH
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:108 - j_updateDashboardWithNull_PATCH
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:117 - k_deleteDashboardById_DELETE
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:125 - l_deleteDashboardByIdThatDoesNotExist_DELETE
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:134 - m_updateNonExistedDashboard_PUT
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:37 INFO  DashboardControllerTest:144 - m_updateNullDashboard_PUT
+ 2023-06-06 19:22:37 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:37 INFO  Listeners:71 - Finished Dashboard API Controller Tests
+ 2023-06-06 19:22:37 INFO  Listeners:67 - Started All UI Test
+ 2023-06-06 19:22:37 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:22:42 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:22:42 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:22:42 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:22:42 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:43 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:44 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:22:44 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:22:47 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:22:47 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:22:47 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:22:47 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:48 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:48 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:22:48 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:22:51 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:22:51 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:22:52 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:22:52 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:53 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:53 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:22:53 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:22:56 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:22:56 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:22:56 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:22:56 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:22:58 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:22:58 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:22:58 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:01 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:01 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:01 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:01 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:06 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:23:06 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:06 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:08 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:08 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:09 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:09 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:14 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:23:14 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:14 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:17 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:17 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:17 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:17 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:18 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:23:19 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:19 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:21 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:21 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:22 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:22 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:27 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:23:27 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:27 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:30 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:30 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:30 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:30 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:35 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:23:35 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:35 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:38 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:38 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:38 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:43 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:23:43 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:43 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:46 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:46 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:46 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:46 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:48 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:23:48 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:48 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:51 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:51 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:51 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:51 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:23:54 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:23:54 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:23:54 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:23:57 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:23:57 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:23:58 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:23:58 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:24:02 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:24:02 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:24:02 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:24:05 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:24:05 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:24:05 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:24:05 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:24:09 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:24:09 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:24:09 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:24:11 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:24:11 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:24:12 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:24:12 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:24:13 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:24:13 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:24:13 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:24:16 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:24:16 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:24:16 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:24:16 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:24:18 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:24:18 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:24:18 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:24:21 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:24:21 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:24:21 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:24:21 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:24:23 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:24:23 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:24:23 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:24:26 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:24:26 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:24:26 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:24:26 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:24:27 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:24:28 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("extent_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("extent_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("extent.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/extent.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "head.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/head.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "nav.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/nav.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/test-view/test-view.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/test-view/test-view-charts.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/test-view/standard.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/category-view/category-view.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/exception-view/exception-view.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/dashboard-view/dashboard-view.ftl"
+ 2023-06-06 19:24:28 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en_GB.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+ 2023-06-06 19:24:28 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+ 2023-06-06 19:24:28 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/logs-view/testrunner-logs-view.ftl"
+ 2023-06-06 19:24:28 INFO  Listeners:71 - Finished All UI Test
+ 2023-06-06 19:26:34 INFO  Listeners:67 - Started Dashboard API Controller Tests
+ 2023-06-06 19:26:34 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:34 INFO  DashboardControllerTest:31 - a_getAllSharedDashboardTest_GET
+ 2023-06-06 19:26:36 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:36 INFO  DashboardControllerTest:38 - b_getAllDashboardListTest_GET
+ 2023-06-06 19:26:36 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:36 INFO  DashboardControllerTest:45 - c_getDashboardByIdTest_GET
+ 2023-06-06 19:26:36 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:36 INFO  DashboardControllerTest:52 - getDashboardByIdThatDoesNotExist_GET
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:72 - e_createNewDashboardWithoutName_POST
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:61 - f_createNewDashboardByName_POST
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:82 - g_createDuplicateDashboard_POST
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:92 - h_updateDashboardNameRQ_UPDATE
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:99 - i_updateDashboardNameRQ_PATCH
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:108 - j_updateDashboardWithNull_PATCH
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:117 - k_deleteDashboardById_DELETE
+ 2023-06-06 19:26:38 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:38 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:38 INFO  DashboardControllerTest:125 - l_deleteDashboardByIdThatDoesNotExist_DELETE
+ 2023-06-06 19:26:39 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:39 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:39 INFO  DashboardControllerTest:134 - m_updateNonExistedDashboard_PUT
+ 2023-06-06 19:26:39 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:39 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:39 INFO  DashboardControllerTest:144 - m_updateNullDashboard_PUT
+ 2023-06-06 19:26:39 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:39 INFO  Listeners:71 - Finished Dashboard API Controller Tests
+ 2023-06-06 19:26:39 INFO  Listeners:67 - Started All UI Test
+ 2023-06-06 19:26:39 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:26:43 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:26:44 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:26:44 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:26:44 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:45 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:45 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:26:45 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:26:49 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:26:49 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:26:50 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:26:50 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:51 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:51 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:26:51 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:26:54 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:26:54 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:26:55 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:26:55 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:26:56 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:26:56 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:26:56 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:26:59 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:26:59 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:26:59 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:26:59 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:01 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:27:01 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:01 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:04 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:04 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:04 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:04 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:06 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:27:06 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:06 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:09 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:09 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:09 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:09 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:14 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:27:15 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:15 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:17 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:17 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:18 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:18 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:22 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:27:23 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:23 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:26 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:26 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:26 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:26 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:28 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:27:28 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:28 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:31 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:31 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:31 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:31 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:32 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:27:33 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:33 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:36 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:36 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:36 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:36 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:41 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:27:41 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:41 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:44 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:44 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:45 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:45 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:49 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:27:50 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:50 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:27:53 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:27:53 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:27:53 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:27:53 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:27:59 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:27:59 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:27:59 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:03 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:03 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:03 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:03 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:09 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:28:09 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:09 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:13 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:13 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:13 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:13 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:18 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:28:18 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:18 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:23 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:23 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:24 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:24 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:29 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:28:29 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:29 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:33 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:33 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:33 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:33 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:38 INFO  Listeners:55 - Skipped test null
+ 2023-06-06 19:28:39 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:39 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:42 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:42 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:42 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:42 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:47 INFO  Listeners:42 - Failed Test null
+ 2023-06-06 19:28:47 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:47 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:50 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:50 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:51 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:51 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:52 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:28:52 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:52 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:28:56 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:28:56 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:28:56 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:28:56 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:28:58 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:28:58 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:28:58 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:29:02 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:29:02 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:29:02 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:29:02 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:29:04 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:29:04 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:29:04 INFO  BaseTest:110 - Property files loaded successfully**********
+ 2023-06-06 19:29:07 INFO  BaseTest:104 - Test driver set up done successfully**********
+ 2023-06-06 19:29:07 INFO  BaseTest:122 - Logging in to portal
+ 2023-06-06 19:29:08 INFO  BaseTest:126 - Logged in
+ 2023-06-06 19:29:08 INFO  Listeners:34 - Started Test null
+ 2023-06-06 19:29:10 INFO  Listeners:38 - Succeeded Test null
+ 2023-06-06 19:29:10 INFO  BaseTest:83 - Test executed**********
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("extent_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("extent_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("extent.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/extent.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "head.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/head.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "nav.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/nav.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/test-view/test-view.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/test-view/test-view-charts.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/test-view/standard.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - "test-view/standard.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/category-view/category-view.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/exception-view/exception-view.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/dashboard-view/dashboard-view.ftl"
+ 2023-06-06 19:29:10 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en_GB.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+ 2023-06-06 19:29:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+ 2023-06-06 19:29:10 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/Suwarna_Wagh/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/logs-view/testrunner-logs-view.ftl"
+ 2023-06-06 19:29:10 INFO  Listeners:71 - Finished All UI Test
  
