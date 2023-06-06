@@ -15,31 +15,9 @@ import pageobject.LoginPage;
 public class DashboardPageTest extends BaseTest {
 
     private static final Logger LOGGER = LogManager.getLogger(DashboardPageTest.class);
-    public LoginPage loginPage;
-    public Dashboard dashboard;
-    public DemoDashboard demoDashboard;
 
-    @Parameters({"username","password"})
     @Test
-    public void loginToReportPortal(@Optional String username, @Optional String pwd) {
-        dashboard = new Dashboard(driver);
-        loginPage = new LoginPage(driver);
-        demoDashboard = new DemoDashboard(driver);
-        loginPage.enterLoginName("superadmin");
-        loginPage.enterLoginPwd("erebus");
-        loginPage.clickOnLogin();
-        dashboard.clickOnDemoDashboard();
-        BaseTest.logger1.info("Test for Log in to portal");
-    }
-    @Parameters({"username","password"})
-    @Test//(dependsOnMethods = "loginToReportPortal")
-    public void totalWidgetPresent(@Optional String username,@Optional String pwd){
-        dashboard = new Dashboard(driver);
-        loginPage = new LoginPage(driver);
-        demoDashboard = new DemoDashboard(driver);
-        loginPage.enterLoginName("superadmin");
-        loginPage.enterLoginPwd("erebus");
-        loginPage.clickOnLogin();
+    public void totalWidgetPresent(){
         dashboard.clickOnDemoDashboard();
         demoDashboard.getTotalWidgetPresetOnDemoDashboard();
         Assert.assertEquals(demoDashboard.getTotalWidgetPresetOnDemoDashboard(), 12);
@@ -58,12 +36,6 @@ public class DashboardPageTest extends BaseTest {
     @Test(dataProvider ="test-data")
     public void searchDashboardNameDP(String keyWord){
         BaseTest.logger1.info("Test for verifying the '"+keyWord+"' Of Widget Preset On Demo Dashboard.");
-        dashboard = new Dashboard(driver);
-        loginPage = new LoginPage(driver);
-        demoDashboard = new DemoDashboard(driver);
-        loginPage.enterLoginName("superadmin");
-        loginPage.enterLoginPwd("erebus");
-        loginPage.clickOnLogin();
         dashboard.clickOnDemoDashboard();
         boolean isPresent = demoDashboard.verifyNamesOfWidgetPresetOnDemoDashboard(keyWord);
         Assert.assertTrue(isPresent);

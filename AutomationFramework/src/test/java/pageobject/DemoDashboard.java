@@ -1,15 +1,15 @@
 package pageobject;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import base.BaseTest;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.UtilitiesClass;
 
 import java.util.List;
+import java.util.Properties;
 
-public class DemoDashboard {//extends BaseTest {
+public class DemoDashboard extends BaseTest {//extends BaseTest {
 
     WebDriver ldriver;
 
@@ -22,17 +22,6 @@ public class DemoDashboard {//extends BaseTest {
 
     @FindBy(xpath = "//div[@class='widgets-grid']")
     WebElement widgetName;
-    @FindBy(xpath = "//div[@class='react-grid-layout']/div[1]//div[contains(@class,'launchStatisticsChart')]//span[@data-id='statistics$executions$total']/span[2]")
-    WebElement statisticsTotal;
-
-    @FindBy(xpath = "//div[@class='react-grid-layout']/div[1]//div[contains(@class,'launchStatisticsChart')]//span[@data-id='statistics$executions$passed']/span[2]")
-    WebElement statisticsPassed;
-
-    @FindBy(xpath = "//div[@class='react-grid-layout']/div[1]//div[contains(@class,'launchStatisticsChart')]//span[@data-id='statistics$executions$failed']/span[2]")
-    WebElement statisticsFailed;
-
-    @FindBy(xpath = "//div[@class='react-grid-layout']/div[1]//div[contains(@class,'launchStatisticsChart')]//span[@data-id='statistics$executions$skipped']/span[2]")
-    WebElement statisticsSkipped;
 
     public int getTotalWidgetPresetOnDemoDashboard(){
         return totalWidget.size();
@@ -43,25 +32,31 @@ public class DemoDashboard {//extends BaseTest {
         return ldriver.findElement(By.xpath("//*[text()='"+ name +"']")).isDisplayed();
     }
 
-    public boolean verifyStatisticsExecutionTotalItemIsPresent(){//LAUNCH STATISTICS AREA
-/*        Utilities utilities = new Utilities();
-        utilities.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));*/
-        return statisticsTotal.isDisplayed();
+    public Dimension getSizeOfWidget1(String xpath) {
+        return ldriver.findElement(By.xpath(xpath)).getSize();
     }
 
-    public boolean verifyStatisticsExecutionPassedItemsIsPresent(String name){//LAUNCH STATISTICS AREA
-        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
-        return statisticsPassed.isDisplayed();
+    public WebElement resizableHandle1_draggable(String xpath) {
+        return ldriver.findElement(By.xpath(xpath));
+    }
+    public Dimension presizableHandle1_droppable(String xpath) {
+        return ldriver.findElement(By.xpath(xpath)).getSize();
     }
 
-    public boolean verifyStatisticsExecutionFailedItemsIsPresent(String name){//LAUNCH STATISTICS AREA
-        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
-        return statisticsFailed.isDisplayed();
+    public WebElement resizableHandle1_droppable(String xpath) {
+        return ldriver.findElement(By.xpath(xpath));
     }
 
-    public boolean verifyStatisticsExecutionSkippedItemsIsPresent(String name){//LAUNCH STATISTICS AREA
-        UtilitiesClass.scrollToElement(ldriver,ldriver.findElement(By.xpath("//*[text()='"+ name +"']")));
-        return statisticsSkipped.isDisplayed();
+    public Dimension updated_sizeOfWidget1(String xpath) {
+        return ldriver.findElement(By.xpath(xpath)).getSize();
+    }
+
+    public WebElement widget2(String xpath) {
+        return ldriver.findElement(By.xpath(xpath));
+    }
+
+    public Point widget2Location(String xpath) {
+        return ldriver.findElement(By.xpath(xpath)).getLocation();
     }
 
 }

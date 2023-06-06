@@ -13,7 +13,7 @@ public class Dashboard {//extends BaseTest {
         ldriver = rdriver;
         PageFactory.initElements(rdriver,this);
     }
-    @FindBy(xpath = "//*[@id='app']/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div/a")
+    @FindBy(xpath = "//a[text()='DEMO DASHBOARD'][@class='gridCell__grid-cell--3e2mS gridCell__align-left--2beIG dashboardTable__name--1sWJs']")
     WebElement demoDashboardNameLink;
 
     public void clickOnDemoDashboard(){

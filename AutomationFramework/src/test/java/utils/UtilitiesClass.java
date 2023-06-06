@@ -17,16 +17,8 @@ import java.util.function.Function;
 import static base.BaseTest.driver;
 
 public class UtilitiesClass {
+    static Actions actions = new Actions(driver);
 
-    public static void clickOnEleByJS(By by){
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
-        executor.executeScript("arguments[0].click();", driver.findElement(by));
-    }
-    public static void clickOnEleByCoordinates(int xCoordinate, int yCoordinate, By by){
-        Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(by), 0, 0);
-        actions.moveByOffset(xCoordinate, yCoordinate).click().build().perform();
-    }
     public static void scrollToElement(WebDriver driver, WebElement element){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         //get the height of the webpage and scroll to the end
@@ -47,13 +39,12 @@ public class UtilitiesClass {
         return path;
     }
 
-    public void setWebdriverWait(WebDriver driver, Duration timeoutInSeconds, By by){
+    public static void setWebdriverWait(WebDriver driver, Duration timeoutInSeconds, By by){
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
-    public void setFluentWait(WebDriver driver, Duration timeoutDuration, Duration pollingDuration,By by){
-
+    public static void setFluentWait(WebDriver driver, Duration timeoutDuration, Duration pollingDuration,By by){
         Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(timeoutDuration)
                 .pollingEvery(pollingDuration)

@@ -15,11 +15,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import pageobject.Dashboard;
+import pageobject.DemoDashboard;
+import pageobject.LoginPage;
 import utils.UtilitiesClass;
 
 import java.io.File;
@@ -31,13 +35,19 @@ import java.util.Properties;
 
 public class BaseTest {
     protected static final Logger LOGGER = LogManager.getLogger(BaseTest.class);
+    public static final String CONFIG_PROPERTIES = "C:\\AdvancedTraining\\AutomationFramework\\src\\test\\resources\\config.properties";
     public static WebDriver driver;
     public Properties properties;
     public ExtentHtmlReporter htmlReporter;
     public static ExtentReports extentReports;
     public static ExtentTest logger1;
+    public LoginPage loginPage;
+    public Dashboard dashboard;
+    public DemoDashboard demoDashboard;
+    public Actions actions;
+
     @BeforeTest
-    public void beforeTesst(){
+    public void setUpTest(){
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+ File.separator + "extentreports" + File.separator + "AutomationTestNGExtentReport.html");
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setDocumentTitle("");
@@ -50,12 +60,11 @@ public class BaseTest {
     public void beforeMethod(Method method) throws IOException {
         logger1 = extentReports.createTest(method.getName());
         setUpDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
-        driver.manage().window().maximize();
-        driver.get(properties.getProperty("url"));
+        setUpBeans();
+        logInToPortal();
     }
     @AfterMethod
-    public void afterMethodd(ITestResult result){
+    public void getTestResult(ITestResult result){
         if(result.getStatus()==ITestResult.SUCCESS){
             String logText = "Test Case: "+result.getMethod().getMethodName()+"  Passed";
             Markup markup = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
@@ -73,6 +82,11 @@ public class BaseTest {
         driver.quit();
         LOGGER.info("Test executed**********");
     }
+    @AfterTest
+    public void tearDown() {
+        extentReports.flush();
+    }
+
     public void setUpDriver() throws IOException {
         properties = readPropFile();
         String browserName = properties.getProperty("browserName");
@@ -84,17 +98,31 @@ public class BaseTest {
         } else if (browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
         }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+        driver.manage().window().maximize();
+        driver.get(properties.getProperty("url"));
         LOGGER.info("Test driver set up done successfully**********");
     }
     public Properties readPropFile() throws IOException {
-        FileReader read = new FileReader("C:\\AdvancedTraining\\AutomationFramework\\src\\test\\resources\\config.properties");
+        FileReader read = new FileReader(CONFIG_PROPERTIES);
         properties = new Properties();
         properties.load(read);
         LOGGER.info("Property files loaded successfully**********");
         return properties;
     }
-    @AfterTest
-    public void tearDown() {
-        extentReports.flush();
+
+    public void setUpBeans(){
+        actions = new Actions(driver);
+        dashboard = new Dashboard(driver);
+        loginPage = new LoginPage(driver);
+        demoDashboard = new DemoDashboard(driver);
+        actions = new Actions(driver);
+    }
+    public void logInToPortal(){
+        LOGGER.info("Logging in to portal");
+        loginPage.enterLoginName(properties.getProperty("loginName"));
+        loginPage.enterLoginPwd(properties.getProperty("password"));
+        loginPage.clickOnLogin();
+        LOGGER.info("Logged in");
     }
 }

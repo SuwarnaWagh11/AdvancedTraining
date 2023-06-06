@@ -26,10 +26,12 @@ public class LoginPage {//extends BaseTest {
     }
 
     public void enterLoginName(String name){
+        loginName.clear();
         loginName.sendKeys(name);
     }
 
     public void enterLoginPwd(String pwd){
+        loginPwd.clear();
         loginPwd.sendKeys(pwd);
     }
 }

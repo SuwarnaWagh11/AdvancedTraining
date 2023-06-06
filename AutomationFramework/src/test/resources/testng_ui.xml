@@ -6,8 +6,6 @@
         <listener class-name="utils.Listeners"/>
     </listeners>
     <test name="All UI Test">
-        <parameter name="username" value="superadmin"/>
-        <parameter name="password" value="erebus"/>
         <packages>
             <package name="alltests.uitest.coreTest"/>
         </packages>
