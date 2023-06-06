@@ -1,0 +1,26 @@
+[main] INFO  alltests.apitest.ApiDemoTest  - demoTest2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - sent: {}315
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - recv: {}2432
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - reqcnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - rescnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - sent: {}315
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - recv: {}2432
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - reqcnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - rescnt: {}2
+  2023-05-24 13:49:43 DEBUG NetworkTrafficMonitorTest:31 - sent: {}315
+ 2023-05-24 13:49:43 DEBUG NetworkTrafficMonitorTest:32 - recv: {}2432
+ 2023-05-24 13:49:43 DEBUG NetworkTrafficMonitorTest:33 - reqcnt: {}2
+ 2023-05-24 13:49:43 DEBUG NetworkTrafficMonitorTest:34 - rescnt: {}2
+ 2023-05-24 13:50:13 DEBUG NetworkTrafficMonitorTest:31 - sent: {}315
+ 2023-05-24 13:50:13 DEBUG NetworkTrafficMonitorTest:32 - recv: {}2432
+ 2023-05-24 13:50:13 DEBUG NetworkTrafficMonitorTest:33 - reqcnt: {}2
+ 2023-05-24 13:50:13 DEBUG NetworkTrafficMonitorTest:34 - rescnt: {}2
+ [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - sent: {}315
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - recv: {}2432
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - reqcnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - rescnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - sent: {}315
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - recv: {}2432
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - reqcnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitorTest  - rescnt: {}2
+  

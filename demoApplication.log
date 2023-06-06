@@ -1,0 +1,9 @@
+[main] DEBUG alltests.apitest.NetworkTrafficMonitor  - sent: {}149
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - recv: {}9597
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - reqcnt: {}1
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - rescnt: {}1
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - sent: {}315
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - recv: {}2432
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - reqcnt: {}2
+  [main] DEBUG alltests.apitest.NetworkTrafficMonitor  - rescnt: {}2
+  

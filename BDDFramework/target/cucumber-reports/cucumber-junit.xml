@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.406" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="VerifyDashboardWidgetVisible" name="Verify that Dashboard page contains all given widgets - Example #1.1" time="6.589">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "superadmin" and password "erebus".passed
+Then Page title should be "Report Portal"...................................passed
+And User clicks on DemoDashboard and get the total widget present in the dashboard page.passed
+And Verify that DemoDashboard page contains "LAUNCH STATISTICS BAR".........passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page" time="5.655">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "superadmin" and password "erebus".passed
+Then Page title should be "Report Portal"...................................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page" time="3.711">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "default" and password "1q2w3e"...passed
+Then Page title should be "Report Portal"...................................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="VerifyDashboardWidgetVisible" name="Verify that Widget contains all given items - Example #1.1" time="4.843">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "superadmin" and password "erebus".passed
+Then Page title should be "Report Portal"...................................passed
+And User clicks on DemoDashboard and get the total widget present in the dashboard page.passed
+And Verify that DemoDashboard page contains "LAUNCH STATISTICS AREA"........passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page - Example #1.1" time="3.183">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "superadmin" and password "erebus".passed
+Then Page title should be "Report Portal"...................................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page - Example #1.2" time="2.685">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "default" and password "1q2w3e"...passed
+Then Page title should be "Report Portal"...................................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
