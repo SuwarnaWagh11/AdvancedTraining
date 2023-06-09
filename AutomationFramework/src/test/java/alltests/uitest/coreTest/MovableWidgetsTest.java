@@ -2,29 +2,27 @@ package alltests.uitest.coreTest;
 
 import base.BaseTest;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MaximizeWidget extends BaseTest {
-    private static final Logger LOG = Logger.getLogger(MaximizeWidget.class.getName());
-
+public class MovableWidgetsTest extends BaseTest {
+    private static final Logger LOG = Logger.getLogger(MovableWidgetsTest.class.getName());
     @Test
-    public void maximizing_widget() {
+    public void automaticMovableWidgets() {
         dashboard.clickOnDemoDashboard();
-        //get the size of widget1
-        Dimension sizeOfWidget1 = demoDashboard.getSizeOfWidget1(properties.getProperty("sizeOfWidget1"));
+        //locate widget 2 and get it's location
+        WebElement widget_2 = demoDashboard.widget2(properties.getProperty("widget_2"));
+        Point before_point =  demoDashboard.widget2Location(properties.getProperty("widget_2"));
         //locate the handler to resize/to drag of widget 1
         WebElement resizableHandle1_draggable = demoDashboard.resizableHandle1_draggable(properties.getProperty("resizableHandle1_draggable"));
         //locate the location to drop widget 1 handler
         WebElement resizableHandle1_droppable = demoDashboard.resizableHandle1_droppable(properties.getProperty("resizableHandle1_droppable"));
         //drag and drop handler od widget1 to resize it
         actions.dragAndDrop(resizableHandle1_draggable,resizableHandle1_droppable).build().perform();
-        //get the size of widget1 after resizing
-        Dimension updated_sizeOfWidget1 = demoDashboard.updated_sizeOfWidget1(properties.getProperty("updated_sizeOfWidget1"));
-        Assert.assertNotEquals(sizeOfWidget1, updated_sizeOfWidget1);
+        //verify that widget 2 is relocated to and not preset to the previous location
+        Point after_point = demoDashboard.widget2Location(properties.getProperty("widget_2"));
+        Assert.assertNotEquals(before_point, after_point);
     }
-
-
 }

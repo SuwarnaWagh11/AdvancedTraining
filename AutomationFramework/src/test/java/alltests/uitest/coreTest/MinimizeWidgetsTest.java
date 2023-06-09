@@ -1,4 +1,4 @@
-package tests;
+package alltests.uitest.coreTest;
 
 import base.BaseTest;
 import org.apache.log4j.Logger;
@@ -11,8 +11,8 @@ import utils.UtilitiesClass;
 
 import java.time.Duration;
 
-public class MinimizeWidget extends BaseTest {
-    private static final Logger LOG = Logger.getLogger(MinimizeWidget.class.getName());
+public class MinimizeWidgetsTest extends BaseTest {
+    private static final Logger LOG = Logger.getLogger(MinimizeWidgetsTest.class.getName());
 
     @Test
     public void minimizing_widget() {

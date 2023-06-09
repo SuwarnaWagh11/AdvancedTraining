@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MovableWidget extends BaseTest {
-    private static final Logger LOG = Logger.getLogger(MovableWidget.class.getName());
+public class MovableWidgetTest extends BaseTest {
+    private static final Logger LOG = Logger.getLogger(MovableWidgetTest.class.getName());
     @Test
     public void automaticMovableWidgets() {
         dashboard.clickOnDemoDashboard();

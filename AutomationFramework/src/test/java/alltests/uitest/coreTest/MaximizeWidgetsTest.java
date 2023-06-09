@@ -1,4 +1,4 @@
-package tests;
+package alltests.uitest.coreTest;
 
 import base.BaseTest;
 import org.apache.log4j.Logger;
@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MaximizeWidget extends BaseTest {
-    private static final Logger LOG = Logger.getLogger(MaximizeWidget.class.getName());
+public class MaximizeWidgetsTest extends BaseTest {
+    private static final Logger LOG = Logger.getLogger(MaximizeWidgetsTest.class.getName());
 
     @Test
     public void maximizing_widget() {
