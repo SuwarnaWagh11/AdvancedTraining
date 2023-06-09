@@ -54,6 +54,7 @@
     <modules>
         <module>BDDFramework</module>
         <module>AutomationFramework</module>
+        <module>SeleniumGrid</module>
     </modules>
 <!--    <repositories>-->
 <!--        <repository>-->

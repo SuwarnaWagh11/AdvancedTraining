@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="BDDFramework" />
         <module name="AutomationFramework" />
+        <module name="SeleniumGrid" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
