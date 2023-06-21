@@ -1,7 +1,6 @@
 package stepDefinitions;
 
 
-import base.BaseTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -47,6 +46,7 @@ public class DashboardTests {
         loginPage.enterLoginPwd(pwd);
         loginPage.clickOnLogin();
     }
+
     @Then("Page title should be {string}")
     public void page_title_should_be(String expectedTitle) {
         String actualTitle = driver.getTitle();
@@ -65,11 +65,12 @@ public class DashboardTests {
         boolean isPresent = demoDashboard.verifyNamesOfWidgetPresetOnDemoDashboard(keyWord);
         Assert.assertTrue(isPresent);
     }
+
     @Then("Verify that widget contains total item")
     public void verify_that_widget_contains_total_item() {
-
         demoDashboard.verifyStatisticsExecutionTotalItemIsPresent();
     }
+
     @Then("User closes the browser")
     public void User_closes_the_browser() {
         driver.quit();
