@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.912" tests="6" skipped="0" failures="0" errors="0">
-<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page" time="4.619">
-<system-out><![CDATA[
-Given user launch the chrome browser........................................passed
-When User opens the URL "http://localhost:8080/"............................passed
-And Log in to the report portal with user "superadmin" and password "erebus".passed
-Then Page title should be "Report Portal"...................................passed
-And User closes the browser.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="VerifyDashboardWidgetVisible" name="Verify that Dashboard page contains all given widgets - Example #1.1" time="6.26">
+<testsuite name="Cucumber" time="20.397" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="VerifyDashboardWidgetVisible" name="Verify that Dashboard page contains all given widgets - Example #1.1" time="7.213">
 <system-out><![CDATA[
 Given user launch the chrome browser........................................passed
 When User opens the URL "http://localhost:8080/"............................passed
@@ -20,7 +11,16 @@ And Verify that DemoDashboard page contains "LAUNCH STATISTICS BAR".........pass
 And User closes the browser.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page" time="3.33">
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page" time="5.402">
+<system-out><![CDATA[
+Given user launch the chrome browser........................................passed
+When User opens the URL "http://localhost:8080/"............................passed
+And Log in to the report portal with user "superadmin" and password "erebus".passed
+Then Page title should be "Report Portal"...................................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page" time="4.451">
 <system-out><![CDATA[
 Given user launch the chrome browser........................................passed
 When User opens the URL "http://localhost:8080/"............................passed
@@ -29,7 +29,7 @@ Then Page title should be "Report Portal"...................................pass
 And User closes the browser.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="VerifyDashboardWidgetVisible" name="Verify that Widget contains all given items - Example #1.1" time="4.143">
+<testcase classname="VerifyDashboardWidgetVisible" name="Verify that Widget contains all given items - Example #1.1" time="8.274">
 <system-out><![CDATA[
 Given user launch the chrome browser........................................passed
 When User opens the URL "http://localhost:8080/"............................passed
@@ -40,7 +40,7 @@ And Verify that DemoDashboard page contains "LAUNCH STATISTICS AREA"........pass
 And User closes the browser.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page - Example #1.1" time="3.173">
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page - Example #1.1" time="5.671">
 <system-out><![CDATA[
 Given user launch the chrome browser........................................passed
 When User opens the URL "http://localhost:8080/"............................passed
@@ -49,7 +49,7 @@ Then Page title should be "Report Portal"...................................pass
 And User closes the browser.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page - Example #1.2" time="2.617">
+<testcase classname="VerifyDashboardPageAccess" name="Login to ReportPortal with superadmin and verify that use is able to access dashboard page - Example #1.2" time="4.673">
 <system-out><![CDATA[
 Given user launch the chrome browser........................................passed
 When User opens the URL "http://localhost:8080/"............................passed

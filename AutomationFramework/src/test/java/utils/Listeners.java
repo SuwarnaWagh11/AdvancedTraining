@@ -27,7 +27,7 @@ public class Listeners implements ITestListener, IAnnotationTransformer {
 
     //@Override
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
-        annotation.setRetryAnalyzer(RetryAnalyser.class);
+        //annotation.setRetryAnalyzer(RetryAnalyser.class);
     }
     @Override
     public void onTestStart(ITestResult result) {
@@ -40,15 +40,6 @@ public class Listeners implements ITestListener, IAnnotationTransformer {
     @Override
     public void onTestFailure(ITestResult result) {
         LOGGER.info("Failed Test "+ result.getTestName());
-       /* String fileName = System.getProperty("user.dir")+ File.separator + "screenshot" + File.separator + result.getMethod().getMethodName();
-        File file = ((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.FILE);
-        try{
-            FileUtils.copyFile(file, new File(fileName+".png"));
-            BaseTest.logger1.addScreenCaptureFromPath("fileName");
-        }catch(IOException e){
-            e.printStackTrace();
-        }*/
-
     }
     @Override
     public void onTestSkipped(ITestResult result) {

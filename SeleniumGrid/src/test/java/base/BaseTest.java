@@ -89,10 +89,10 @@ public class BaseTest {
     }
 
     public void setUpReport() {
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+ File.separator + "reports" + File.separator + "AutomationTestNGExtentReport.html");
+        htmlReporter = new ExtentHtmlReporter("C:\\AdvancedTraining\\Target_Reports\\ParellelTestingExtentReport.html");
         htmlReporter.config().setEncoding("utf-8");
-        htmlReporter.config().setDocumentTitle("");
-        htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setDocumentTitle("Grid Execution");
+        htmlReporter.config().setTheme(Theme.STANDARD);
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Automation Tester","Suwarna Wagh");

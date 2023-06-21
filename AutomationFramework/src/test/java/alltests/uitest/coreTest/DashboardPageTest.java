@@ -15,10 +15,6 @@ public class DashboardPageTest extends BaseTest {
     private static final Logger LOGGER = LogManager.getLogger(DashboardPageTest.class);
 
     @Test
-    public void totalWidffgetPresent(){
-        System.out.println(LocalDate.now()+"------------------------------------------------"+System.currentTimeMillis());
-    }
-    @Test
     public void totalWidgetPresent(){
         dashboard.clickOnDemoDashboard();
         demoDashboard.getTotalWidgetPresetOnDemoDashboard();

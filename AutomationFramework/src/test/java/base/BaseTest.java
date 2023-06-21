@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -45,23 +46,28 @@ public class BaseTest {
     public Dashboard dashboard;
     public DemoDashboard demoDashboard;
     public Actions actions;
-
+    private ThreadLocal<String> testName = new ThreadLocal<>();
     @BeforeTest
     public void setUpTest(){
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+ File.separator + "extentreports" + File.separator + "AutomationTestNGExtentReport.html");
+        htmlReporter = new ExtentHtmlReporter("C:\\AdvancedTraining\\Target_Reports\\AutomationTestNGExtentReport.html");
         htmlReporter.config().setEncoding("utf-8");
-        htmlReporter.config().setDocumentTitle("");
+        htmlReporter.config().setDocumentTitle("Automation Report");
         htmlReporter.config().setTheme(Theme.DARK);
         extentReports = new ExtentReports();
         extentReports.attachReporter(htmlReporter);
         extentReports.setSystemInfo("Automation Tester","Suwarna Wagh");
     }
     @BeforeMethod
-    public void beforeMethod(Method method) throws IOException {
-        logger1 = extentReports.createTest(method.getName());
+    public void beforeMethod(Method method, Object[] testData, ITestContext ctx) throws IOException {
         setUpDriver();
         setUpBeans();
         logInToPortal();
+        if (testData.length > 0) {
+            testName.set(method.getName() + "_" + testData[0]);
+            ctx.setAttribute("testName", testName.get());
+        } else
+            ctx.setAttribute("testName", method.getName());
+        logger1 = extentReports.createTest(ctx.getAttribute("testName").toString());
     }
     @AfterMethod
     public void getTestResult(ITestResult result){

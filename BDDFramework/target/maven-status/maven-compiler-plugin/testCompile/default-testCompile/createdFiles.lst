@@ -1,0 +1,3 @@
+apitests\ApiDemoTest.class
+stepDefinitions\DashboardTests.class
+testRunner\TestRunner.class

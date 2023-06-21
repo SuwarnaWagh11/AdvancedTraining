@@ -48,7 +48,7 @@
             </plugins>
         </pluginManagement>
     </build>
-    <repositories>
+<!--    <repositories>
         <repository>
             <snapshots>
                 <enabled>false</enabled>
@@ -57,7 +57,7 @@
             <name>bintray</name>
             <url>http://dl.bintray.com/epam/reportportal</url>
         </repository>
-    </repositories>
+    </repositories>-->
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
