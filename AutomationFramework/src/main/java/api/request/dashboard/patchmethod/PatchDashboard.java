@@ -1,4 +1,4 @@
-package api.request.dashboard.patchMethod;
+package api.request.dashboard.patchmethod;
 
 import api.request.BaseRequest;
 import model.dto.PatchDashboardDto;

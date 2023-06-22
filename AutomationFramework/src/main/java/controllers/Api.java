@@ -1,5 +1,7 @@
 package controllers;
 
 public class Api {
-    public static DashboardController dashboardController = new DashboardController();
+    private Api() {
+    }
+    public static final DashboardController dashboardController = new DashboardController();
 }

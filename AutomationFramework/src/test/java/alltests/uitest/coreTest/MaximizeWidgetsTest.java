@@ -1,13 +1,13 @@
 package alltests.uitest.coreTest;
 
-import base.BaseTest;
+import base.BaseClass;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MaximizeWidgetsTest extends BaseTest {
+public class MaximizeWidgetsTest extends BaseClass {
     private static final Logger LOG = Logger.getLogger(MaximizeWidgetsTest.class.getName());
 
     @Test

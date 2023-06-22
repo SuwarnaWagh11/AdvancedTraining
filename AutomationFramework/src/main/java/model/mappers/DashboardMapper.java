@@ -16,4 +16,7 @@ public class DashboardMapper {
     public static <T> T map(Dashboard dashboard, Class<T> clazz){
         return mapper.map(dashboard, clazz);
     }
+
+    private DashboardMapper() {
+    }
 }

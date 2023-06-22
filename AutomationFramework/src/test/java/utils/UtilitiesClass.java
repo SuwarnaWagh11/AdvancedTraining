@@ -15,7 +15,7 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.util.function.Function;
 
-import static base.BaseTest.driver;
+import static base.BaseClass.driver;
 
 public class UtilitiesClass {
     static Actions actions = new Actions(driver);

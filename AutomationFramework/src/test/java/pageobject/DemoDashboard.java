@@ -1,15 +1,14 @@
 package pageobject;
 
-import base.BaseTest;
+import base.BaseClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.UtilitiesClass;
 
 import java.util.List;
-import java.util.Properties;
 
-public class DemoDashboard extends BaseTest {//extends BaseTest {
+public class DemoDashboard extends BaseClass {//extends BaseTest {
 
     WebDriver ldriver;
 

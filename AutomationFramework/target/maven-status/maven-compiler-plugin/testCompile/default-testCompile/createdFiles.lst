@@ -1,5 +1,6 @@
 pageobject\DemoDashboard.class
 alltests\uitest\coreTest\MovableWidgetsTest.class
+base\BaseClass.class
 alltests\apitest\UniRestApiTest.class
 utils\Listeners.class
 utils\RetryAnalyser.class
@@ -7,7 +8,6 @@ utils\UtilitiesClass$1.class
 alltests\apitest\DashboardControllerTest.class
 alltests\uitest\coreTest\DashboardPageTest.class
 alltests\uitest\coreTest\MinimizeWidgetsTest.class
-base\BaseTest.class
 pageobject\LoginPage.class
 utils\UtilitiesClass.class
 alltests\apitest\NetworkTrafficMonitorTest.class

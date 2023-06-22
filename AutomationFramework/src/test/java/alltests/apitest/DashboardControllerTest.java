@@ -3,20 +3,14 @@ package alltests.apitest;
 import controllers.Api;
 import controllers.constants.ErrorCodeConstants;
 import controllers.constants.ResponseCodeConstants;
-import io.restassured.http.Header;
 import io.restassured.path.json.JsonPath;
 import model.business.Dashboard;
 import model.business.DashboardManager;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
-import pojo.UpdateRQ;
-import pojo.UpdateWidgets;
-import pojo.WidgetPosition;
-import pojo.WidgetSize;
 
 import java.text.MessageFormat;
 
-import static io.restassured.RestAssured.given;
 import static model.enums.DashboardEnums.*;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -146,47 +140,5 @@ public class DashboardControllerTest {
         Api.dashboardController.updateDashboardById(69, dashboard)
                 .statusCode(ErrorCodeConstants.BAD_REQUEST)
                 .body(ERRORCODE.label, equalTo(ErrorCodeConstants.ERROR_CODE_BAD_REQUEST));
-        //.body(MESSAGE.label,equalTo(MessageFormat.format(ErrorCodeConstants.NOT_FOUND_ERROR_MESSAGE, 77)));
     }
-
-    //@Test
-    public void updateDashboardRQ_UPDATE() {
-        LOG.info("updateDashboardRQ");
-        UpdateRQ urq = new UpdateRQ();
-        UpdateWidgets[] uw = new UpdateWidgets[1];
-        uw[0] = new UpdateWidgets();
-        uw[0].setWidgetId(53);
-        uw[0].setWidgetName("LAUNCH STATISTICS AREA");
-        uw[0].setShare(true);
-        uw[0].setWidgetType("Cumulative trend chart");
-        WidgetPosition wp = new WidgetPosition();
-        wp.setPositionY(12);
-        wp.setPositionX(12);
-        uw[0].setWidgetPosition(wp);
-        WidgetSize ws = new WidgetSize();
-        ws.setHeight(5);
-        ws.setWidth(5);
-        uw[0].setWidgetSize(ws);
-        urq.setDescription("DEMO DASHBOARD 001311");
-        urq.setName("QAT Dashboard 001311");
-        urq.setShare(true);
-        urq.setUpdateWidgets(uw);
-        given().header(new Header("Authorization", "Bearer " + "8bb82a7d-a573-419e-9cce-c2419f308802"))
-                .contentType("application/json")
-                .when()
-                .body(urq)
-                .put("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/51")
-                .then()
-                .statusCode(ResponseCodeConstants.OK)
-                .extract().response().asPrettyString();
-    }
-
 }
-/*        /*given().header(new Header("Authorization","Bearer "+"8bb82a7d-a573-419e-9cce-c2419f308802"))
-                .contentType("application/json")
-                .when()
-                .body(dashboard)
-                .put("http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/51")
-                .then()
-                .statusCode(ResponseCodeConstants.OK)
-                .extract().response().asPrettyString();*/

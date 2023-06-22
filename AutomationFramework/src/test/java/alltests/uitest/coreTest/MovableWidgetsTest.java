@@ -1,13 +1,13 @@
 package alltests.uitest.coreTest;
 
-import base.BaseTest;
+import base.BaseClass;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MovableWidgetsTest extends BaseTest {
+public class MovableWidgetsTest extends BaseClass {
     private static final Logger LOG = Logger.getLogger(MovableWidgetsTest.class.getName());
     @Test
     public void automaticMovableWidgets() {

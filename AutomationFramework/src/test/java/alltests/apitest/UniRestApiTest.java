@@ -9,11 +9,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class UniRestApiTest {
+class UniRestApiTest {
     @Test
-    public void a_uniRestApiTestGet() throws UnirestException {
+    void a_uniRestApiTestGet() throws UnirestException {
         HttpResponse<JsonNode> jsonResponse = Api.dashboardController.uniRestApiTestGet();
-
         assertNotNull(jsonResponse.getBody());
         assertEquals(200, jsonResponse.getStatus());
     }

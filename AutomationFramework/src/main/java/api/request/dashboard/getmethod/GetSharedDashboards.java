@@ -1,4 +1,4 @@
-package api.request.dashboard.getMethod;
+package api.request.dashboard.getmethod;
 
 import api.request.BaseRequest;
 

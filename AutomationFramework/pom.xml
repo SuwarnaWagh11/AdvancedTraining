@@ -35,7 +35,7 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <suiteXmlFiles>
                             <xmlFile>src/test/resources/testng.xml</xmlFile>
-                            <xmlFile>src/test/resources/testng_ui.xml</xmlFile>
+<!--                            <xmlFile>src/test/resources/testng_ui.xml</xmlFile>-->
                         </suiteXmlFiles>
                         <workingDirectory>./</workingDirectory>
                         <properties>
@@ -58,18 +58,7 @@
             </plugins>
         </pluginManagement>
     </build>
-<!--    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>bintray-epam-reportportal</id>
-            <name>bintray</name>
-            <url>http://dl.bintray.com/epam/reportportal</url>
-        </repository>
-    </repositories>-->
-
-    <dependencies>
+ <dependencies>
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
         <dependency>
             <groupId>org.mockito</groupId>

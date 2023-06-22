@@ -2,10 +2,10 @@ C:\AdvancedTraining\AutomationFramework\src\test\java\alltests\apitest\UniRestAp
 C:\AdvancedTraining\AutomationFramework\src\test\java\utils\RetryAnalyser.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\utils\UtilitiesClass.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\alltests\uitest\coreTest\DashboardPageTest.java
+C:\AdvancedTraining\AutomationFramework\src\test\java\base\BaseClass.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\alltests\uitest\coreTest\MinimizeWidgetsTest.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\alltests\uitest\coreTest\MaximizeWidgetsTest.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\alltests\apitest\DashboardControllerTest.java
-C:\AdvancedTraining\AutomationFramework\src\test\java\base\BaseTest.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\alltests\apitest\NetworkTrafficMonitorTest.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\pageobject\LoginPage.java
 C:\AdvancedTraining\AutomationFramework\src\test\java\utils\Listeners.java

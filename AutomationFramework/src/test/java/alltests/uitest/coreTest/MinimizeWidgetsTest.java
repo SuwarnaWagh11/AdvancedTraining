@@ -1,6 +1,6 @@
 package alltests.uitest.coreTest;
 
-import base.BaseTest;
+import base.BaseClass;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -11,7 +11,7 @@ import utils.UtilitiesClass;
 
 import java.time.Duration;
 
-public class MinimizeWidgetsTest extends BaseTest {
+public class MinimizeWidgetsTest extends BaseClass {
     private static final Logger LOG = Logger.getLogger(MinimizeWidgetsTest.class.getName());
 
     @Test

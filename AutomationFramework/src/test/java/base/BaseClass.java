@@ -27,15 +27,14 @@ import pageobject.DemoDashboard;
 import pageobject.LoginPage;
 import utils.UtilitiesClass;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.Properties;
 
-public class BaseTest {
-    protected static final Logger LOGGER = LogManager.getLogger(BaseTest.class);
+public class BaseClass {
+    protected static final Logger LOGGER = LogManager.getLogger(BaseClass.class);
     public static final String CONFIG_PROPERTIES = "C:\\AdvancedTraining\\AutomationFramework\\src\\test\\resources\\config.properties";
     public static WebDriver driver;
     public Properties properties;

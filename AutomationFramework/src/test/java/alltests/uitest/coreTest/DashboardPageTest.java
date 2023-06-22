@@ -1,16 +1,13 @@
 package alltests.uitest.coreTest;
 
-import base.BaseTest;
+import base.BaseClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
-public class DashboardPageTest extends BaseTest {
+public class DashboardPageTest extends BaseClass {
 
     private static final Logger LOGGER = LogManager.getLogger(DashboardPageTest.class);
 
@@ -19,7 +16,7 @@ public class DashboardPageTest extends BaseTest {
         dashboard.clickOnDemoDashboard();
         demoDashboard.getTotalWidgetPresetOnDemoDashboard();
         Assert.assertEquals(demoDashboard.getTotalWidgetPresetOnDemoDashboard(), 12);
-        BaseTest.logger1.info("Test for verifying total Widget Present on the dashboard");
+        BaseClass.logger1.info("Test for verifying total Widget Present on the dashboard");
     }
     @DataProvider(name = "test-data")
     public Object[][] dataProvFunc(){
@@ -33,7 +30,7 @@ public class DashboardPageTest extends BaseTest {
 
     @Test(dataProvider ="test-data")
     public void searchDashboardNameDP(String keyWord){
-        BaseTest.logger1.info("Test for verifying the '"+keyWord+"' Of Widget Preset On Demo Dashboard.");
+        BaseClass.logger1.info("Test for verifying the '"+keyWord+"' Of Widget Preset On Demo Dashboard.");
         dashboard.clickOnDemoDashboard();
         boolean isPresent = demoDashboard.verifyNamesOfWidgetPresetOnDemoDashboard(keyWord);
         Assert.assertTrue(isPresent);

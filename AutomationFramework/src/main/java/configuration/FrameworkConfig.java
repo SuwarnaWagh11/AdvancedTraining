@@ -1,6 +1,7 @@
 package configuration;
 
 public class FrameworkConfig {
-    public static String baseUrl = "http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM";
-    public static String token = "8bb82a7d-a573-419e-9cce-c2419f308802";
+    private FrameworkConfig() {
+    }
+    public static final String BASE_URI = "http://192.168.1.11:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM";
 }

@@ -12,4 +12,7 @@ public class ErrorCodeConstants {
     public static final String NOT_FOUND_ERROR_MESSAGE = "Dashboard with ID \''{0}\'' not found on project \''automationtestingadvancedprogram\''. Did you use correct Dashboard ID?";
     public static final String BAD_REQUEST_ERROR_MESSAGE_NAME = "Incorrect Request. [Field 'name' should not be null.] ";
     public static final String BAD_REQUEST_ERROR_MESSAGE_DUPLICATE = "Resource \''{0}\'' already exists. You couldn\''t create the duplicate.";
+
+    private ErrorCodeConstants() {
+    }
 }

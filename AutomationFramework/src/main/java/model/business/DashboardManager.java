@@ -1,8 +1,8 @@
 package model.business;
 
-import configuration.FrameworkConfig;
-
 public class DashboardManager {
+    private DashboardManager() {
+    }
 
     public static Dashboard createQADashboard(String name, String desc, boolean shared){
         return new DashboardBuilder()

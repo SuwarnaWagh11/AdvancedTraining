@@ -1,4 +1,4 @@
-package api.request.dashboard.deleteMethod;
+package api.request.dashboard.deletemethod;
 
 import api.request.BaseRequest;
 
