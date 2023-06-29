@@ -21,7 +21,7 @@ suwarnawagh_2RNiFk
 https://suwarnawagh_2RNiFk:6KnfFqV9HehN7odumuxE@hub-cloud.browserstack.com/wd/hub
 ---------------------Deploy report portal with docker-----------------------------
 
-Refer cideo - https://www.youtube.com/watch?v=Wxb4JH7p1B4 - Report Portal Installation
+Refer video - https://www.youtube.com/watch?v=Wxb4JH7p1B4 - Report Portal Installation
 
 Make sure Docker Engine & Compose is installed.
 
@@ -56,11 +56,9 @@ http://localhost:9090/
 
 admin - 123456789
 
-SOnarqube
-
+Sonarqube
 C:\report_portal>docker run --name sonarqube3091 -h sonarqube3091 -p 8094:9000 -d sonarqube
 0bcfc5726607280c596e7403b56bbbcaf0eedf6f9e7450cade4e04525edea7e5
-
 http://localhost:8094/
 admin - 123456789
 
@@ -94,16 +92,6 @@ http://localhost:8080/api/
 
 8bb82a7d-a573-419e-9cce-c2419f308802
 
-http://localhost:8080/api/v1/AUTOMATIONTESTINGADVANCEDPROGRAM/dashboard/28
-
-2600
-813.58
-
-
-girirandhirkumar@gmail.com
-Disc0ver""23
-
-https://wearecommunity.io/events/live-code-session/talks/45688?_gl=1*1g7fi60*_ga*ODc2MDAwMDAwMDAwMDY4NzM5NQ..*_ga_WBGDS7S6W6*MTY4NDY1NTA1NC4xMTIuMC4xNjg0NjU1MDU0LjYwLjAuMA..*_ga_W1T3XZ3Z92*MTY4NDY1NTA1NC4xMTguMC4xNjg0NjU1MDU0LjAuMC4w
 https://www.youtube.com/watch?v=P5CLXIC7x5c - Selenium 4 Grid Tutorial with examples - Parallel execution in Remote Machines
 
 C:\Selenium Grid>Java -jar selenium-server-4.9.1.jar hub
@@ -144,7 +132,7 @@ my Hub(same machine)	::  	java -jar selenium-server-4.9.1.jar node -–detect-dr
 adding node on my Hub
 (diff. physical machine)::		java -jar selenium-server-4.9.1.jar node -–detect-drivers true –publish-events tcp:// 192.168.1.11:4442 –subscribe-events tcp:// 192.168.1.11:4443
 
-
+-----------------------------
 This field follows the syntax of cron (with minor differences). Specifically, each line consists of 5 fields separated by TAB or whitespace:
 MINUTE HOUR DOM MONTH DOW
 
@@ -237,5 +225,4 @@ executed this in cmd
 sc-4.9.1-win32\sc-4.9.1-win32\bin>sc -u oauth-suwarnawagh11-4520d -k 28d87cd0-8d3a-4928-83f5-fcf8531a1890 --region eu-central --tunnel-name oauth-suwarnawagh11-4520d_tunnel_name
 
 http://localhost:8080/ui/#login
-https://192.168.1.11:8080/
 
