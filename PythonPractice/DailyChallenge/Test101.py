@@ -1,0 +1,3 @@
+
+val = "name"
+print(val)
